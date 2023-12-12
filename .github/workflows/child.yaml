@@ -14,4 +14,4 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Triggered common Workflow" 
+      - run: echo "Triggered common Workflow from child 🐭" 
