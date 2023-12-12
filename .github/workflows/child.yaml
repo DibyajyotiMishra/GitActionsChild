@@ -8,7 +8,10 @@ on:
 
 jobs:
   build:
+    uses: DibyajyotiMishra/GitActionsCommon/.github/workflows/common.yaml@main
+  commit:
+    name: Commit
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Child Action
-        uses: DibyajyotiMishra/GitActionsCommon/.github/workflows/common.yaml@main
+      - run: echo "Triggered common Workflow" 
